@@ -1,0 +1,9 @@
+<app-child
+  (dataEvent)="receiveData($event)"
+  (dataintEvent)="receiveintData($event)"
+></app-child>
+<!-- <app-child ></app-child> -->
+<hr />
+<br />
+<div>Received StringData From ChildComponent:{{ receivedData }}</div>
+<div>Received Numeric Data From ChildComponent:{{ receivedIntDataValue }}</div>
