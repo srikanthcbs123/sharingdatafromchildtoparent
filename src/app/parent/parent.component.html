@@ -1,9 +1,14 @@
-<app-child
-  (dataEvent)="receiveData($event)"
-  (dataintEvent)="receiveintData($event)"
-></app-child>
-<!-- <app-child ></app-child> -->
-<hr />
-<br />
-<div>Received StringData From ChildComponent:{{ receivedData }}</div>
-<div>Received Numeric Data From ChildComponent:{{ receivedIntDataValue }}</div>
+<div style="color: green">
+  
+  <app-child
+    (datastringEvent)="receivestringEvent($event)"
+    (dataintEvent)="receiveintData($event)"
+  ></app-child>
+  <!-- <app-child ></app-child> -->
+  <hr />
+  <br />
+  <div>Received StringData From ChildComponent:{{ receivedStringData }}</div>
+  <div>
+    Received Numeric Data From ChildComponent:{{ receivedIntDataValue }}
+  </div>
+</div>

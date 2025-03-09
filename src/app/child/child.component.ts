@@ -10,11 +10,11 @@ export class ChildComponent implements OnInit {
   // i: Number = 0; //variable declartion and intilazation in agular
   ngOnInit(): void {}
   //step1:create outputdecrator with eventemitter
-  @Output() dataEvent = new EventEmitter<string>(); //here you to inform what data we are sending to parent componet
+  @Output() datastringEvent = new EventEmitter<string>(); //here you  inform what data we are sending to parent componet
   @Output() dataintEvent = new EventEmitter<number>();
-  sendData() {
+  sendStringData() {
     debugger;
-    this.dataEvent.emit('Hello hyderabad');
+    this.datastringEvent.emit('Hello hyderabad');
   }
   sendIntValue() {
     let i = 1;
